@@ -1,4 +1,8 @@
-# SQL Server
+---
+description: Making SQL scripts the Microsoft way.
+---
+
+# MSSQL
 
 ## Validate SQL scripts
 

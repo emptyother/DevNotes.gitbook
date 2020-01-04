@@ -1,3 +1,7 @@
+---
+description: 'Anything related to Spotify, because it has problems too.'
+---
+
 # Spotify
 
 ## Problem: Can't play this track

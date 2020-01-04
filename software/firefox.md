@@ -1,6 +1,10 @@
+---
+description: Anything related to THE MOST CUSTOMIZABLE browser out there.
+---
+
 # Mozilla Firefox
 
-## Add-ons
+## Useful Add-ons
 
 * Adguard Adblocker
 * Greasemonkey

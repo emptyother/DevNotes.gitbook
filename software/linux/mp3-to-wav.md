@@ -1,6 +1,10 @@
-# Linux Convert an MP3 File to WAV Format
+---
+description: >-
+  mpg123 is a free and open-source audio player. It supports MPEG audio formats,
+  including MP3.
+---
 
-by Vivek Gite on November 3, 2009 last updated November 3, 2009 in BASH Shell, CentOS, Debian / Ubuntu, FreeBSD, Linux, RedHat and Friends, Suse, Ubuntu Linux, UNIX
+# mpg123
 
 ## How do I convert an MP3 file to WAV format under Linux using a shell prompt?
 

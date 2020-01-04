@@ -1,4 +1,8 @@
-# Nagios
+---
+description: Anything related to the free uptime-watcher tool Nagios Core.
+---
+
+# Nagios Core
 
 ## Configuration
 

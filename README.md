@@ -1,8 +1,8 @@
 ---
-description: Lets see how good this is at being my DevNotes
+description: Useful notes about anything computers.
 ---
 
-# DevNotes
+# About
 
-Experiment in GitBook.
+_Most_ of this is cut-and-paste info from Stackexchange or other pages. _Some_ of it is **personal knowledge**.
 

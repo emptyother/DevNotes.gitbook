@@ -1,3 +1,9 @@
+---
+description: >-
+  Anything related to Microsoft Office, either the local apps, or the cloud 365
+  apps, or administration of it.
+---
+
 # Microsoft Office
 
 ## Making an AzureAD user a local admin
@@ -13,7 +19,7 @@
 
    `net localgroup administrators AzureAD\JohnDoe /add`
 
-Source: [https://superuser.com/questions/982336/how-do-i-add-azure-active-directory-user-to-local-administrators-group](https://superuser.com/questions/982336/how-do-i-add-azure-active-directory-user-to-local-administrators-group)
+Source: [https://superuser.com/questions/982336/](https://superuser.com/questions/982336/how-do-i-add-azure-active-directory-user-to-local-administrators-group)
 
 ## Create a Skype for Business meeting without installing Skype for Business on the local machine
 

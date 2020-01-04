@@ -1,4 +1,4 @@
-# Hyper-V
+# Hyper-V troubleshooting
 
 ## Hyper-V cannot connect to the internet
 
@@ -22,5 +22,5 @@ As a Microsoft developer, I prefer to leverage Microsoft tools whenever possible
 
 Now, whether you are trying to get some work done at the airport or giving a demo at the client’s office, your Hyper-V VM can share your laptop’s wireless connection.
 
-Fra [http://blog.credera.com/technology-insights/microsoft-solutions/using-your-windows-8-wireless-connection-inside-hyper-v/](http://blog.credera.com/technology-insights/microsoft-solutions/using-your-windows-8-wireless-connection-inside-hyper-v/)
+**Source**: [http://blog.credera.com/technology-insights/microsoft-solutions/using-your-windows-8-wireless-connection-inside-hyper-v/](http://blog.credera.com/technology-insights/microsoft-solutions/using-your-windows-8-wireless-connection-inside-hyper-v/)
 

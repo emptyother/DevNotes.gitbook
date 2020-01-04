@@ -1,6 +1,12 @@
+---
+description: >-
+  Anything related to Microsoft Windows, the Operative System, its bundled
+  applications, and its desktop environment.
+---
+
 # Microsoft Windows
 
-## Windows Desktop icons locations
+## Windows default icon locations
 
 | Path |
 | :--- |
@@ -70,7 +76,9 @@ That’s it! Now whenever you create a new user account on your Windows 8, there
 
    account on your Windows 8: `Get-AppxPackage -AllUsers | Remove-AppxPackage`
 
-That’s it! The apps will now be completely uninstalled and erased from your system! Interested readers can proceed to TechNet Blogs & Microsoft for advanced readings. Fra [http://www.thewindowsclub.com/erase-default-preinstalled-modern-apps-windows-8](http://www.thewindowsclub.com/erase-default-preinstalled-modern-apps-windows-8)
+That’s it! The apps will now be completely uninstalled and erased from your system!
+
+**Source:** [http://www.thewindowsclub.com/erase-default-preinstalled-modern-apps-windows-8](http://www.thewindowsclub.com/erase-default-preinstalled-modern-apps-windows-8)
 
 ## How to remove a specific bundled app in Windows 10 individually
 
@@ -138,7 +146,7 @@ Add-AppxPackage -register "C:\Program Files\WindowsApps\Microsoft.WindowsStore_8
 
 This will put back the Store app. You can then install new apps that you actually need such as games without the useless pre-loaded apps for which desktop apps are a far better alternative. If you get the error "access denied" or something like that, you might need to take ownership of the WindowsApps folder. See the article on How to take ownership and get full access to files and folders in Windows 10. Thanks to our reader "Greg" for sharing this tip.
 
-From [http://winaero.com/blog/how-to-restore-windows-store-in-windows-10-after-removing-it-with-powershell/](http://winaero.com/blog/how-to-restore-windows-store-in-windows-10-after-removing-it-with-powershell/)
+**Source**: [http://winaero.com/blog/how-to-restore-windows-store-in-windows-10-after-removing-it-with-powershell/](http://winaero.com/blog/how-to-restore-windows-store-in-windows-10-after-removing-it-with-powershell/)
 
 ## Scroll window under mouse cursor
 
@@ -334,218 +342,7 @@ So %L or %l should be preferred.
 
 Also see [http://www.robvanderwoude.com/ntstart.php](http://www.robvanderwoude.com/ntstart.php)
 
-From [http://superuser.com/questions/136838/which-special-variables-are-available-when-writing-a-shell-command-for-a-context](http://superuser.com/questions/136838/which-special-variables-are-available-when-writing-a-shell-command-for-a-context)
-
-## The START command:
-
-```text
-    Windows NT 4/Windows 2000 Syntax
-Starts a separate window to run a specified program or command.
-START    ["title"] [/Dpath] [/I] [/MIN] [/MAX] [/SEPARATE | /SHARED] [/LOW | /NORMAL | /HIGH | /REALTIME] [/WAIT] [/B] [command / program] [parameters]
-"title"    Title to display in window title bar
-/Dpath    Starting directory
-/I    The new environment will be the original environment passed to the cmd.exe and not the current environment.
-/MIN    Start window minimized
-/MAX    Start window maximized
-/SEPARATE    Start 16-bit Windows program in separate memory space
-/SHARED    Start 16-bit Windows program in shared memory space
-/LOW    Start application in the IDLE priority class
-/NORMAL    Start application in the NORMAL priority class
-/HIGH    Start application in the HIGH priority class
-/REALTIME    Start application in the REALTIME priority class
-/WAIT    Start application and wait for it to terminate
-/B    Start application without creating a new window.
-    The application has ˆC handling ignored.
-    Unless the application enables ˆC processing, ˆBreak is the only way to interrupt the application
-command / program    If it is an internal cmd command or a batch file then the command processor is run with the /K switch to cmd.exe.
-    This means that the window will remain after the command has been run.
-    If it is not an internal cmd command or batch file then it is a program and will run as either a windowed application or a console application.
-parameters    These are the parameters passed to the command/program
-If Command Extensions are enabled, external command invocation through the command line or the START command changes as follows:
-Non-executable files may be invoked through their file association just by typing the name of the file as a command. (e.g. WORD.DOC would launch the application associated with the .DOC file extension).
-See the ASSOC and FTYPE commands for how to create these associations from within a command script.
-When executing an application that is a 32-bit GUI application, CMD.EXE does not wait for the application to terminate before returning to the command prompt. This new behavior does NOT occur if executing within a command script.
-When executing a command line whose first token is CMD without an extension or path qualifier, then replaces CMD with the value of the COMSPEC variable, thus avoiding picking up random versions of CMD.EXE when you least expect them.
-When executing a command line whose first token does NOT contain an extension, then CMD.EXE uses the value of the PATHEXT environment variable to determine which extensions to look for and in what order. The default value for the PATHEXT variable is:
-.COM;.EXE;.BAT;.CMD
-Notice the syntax is the same as the PATH variable, with semicolons separating the different elements.
-When executing a command, if there is no match on any extension, then looks to see if the name, without any extension, matches a directory name and if it does, the START command launches the Explorer on that path. If done from the command line, it is the equivalent to doing a CD /D to that path.
-    File Associations
-The file associations for non-executable files are stored in the registry in the HKEY_CLASSES_ROOT hive.
-The HKEY_CLASSES_ROOT\.ext entry (as created by the ASSOC command) points to the file type (e.g. Word.Document.12 for HKEY_CLASSES_ROOT\.docx).
-The details for the specified file type are also stored in the HKEY_CLASSES_ROOT hive under HKEY_CLASSES_ROOT\FileType (e.g. HKEY_CLASSES_ROOT\Word.Document.12).
-In HKEY_CLASSES_ROOT\FileType\shell\open\command the "File Open" command is stored (e.g. "C:\Program Files\Microsoft Office\Office12\WINWORD.EXE" /n /dde for HKEY_CLASSES_ROOT\Word.Document.12\shell\open\command).
-Often we find "%1" in the commands associated with file types (HKEY_CLASSES_ROOT\FileType\shell\open\command).
-In Windows 9x through 2000 (and possibly XP) this would evaluate to the short notation of the fully qualified path of the file of type FileType.
-To get the long file name, use "%L" instead of "%1".
-I ran some tests in Windows 7 and found the following parameters for file associations:
-Parameter    Evaluates to
-%1    Long fully qualified path of file
-%D    Long fully qualified path of file
-%H    0
-%I    :number:number
-%L    Long fully qualified path of file
-%S    1
-%V    Long fully qualified path of file
-%W    Long fully qualified path of parent folder
-So far I don't have a clue as to what %H, %I and %S are for.
-And it seems we can no longer get a short file name even if we want to.
-For backward compatibility it would seem wise to stick with %1, %L and %W (Thomas Rudloff confirmed that %W is valid in XP, but I haven't tested in older Windows versions).
-    Related Stuff:
-    } Open folders in Explorer
-    } Use StartHow.bat to find the complete command line of the command that will be issued when a file is opened with the START command
-```
-
-From [http://www.robvanderwoude.com/ntstart.php](http://www.robvanderwoude.com/ntstart.php)
-
-## Readyboot keeps giving errors
-
-Could this cause Windows hiccups? Because whenever weird app crashes happens, ReadyBoot gives errors in the logs.
-
-* The protocol host process 6504 did not respond and is being forcibly
-
-  terminated {filter host process 1156}.
-
-* The maximum file size for session "ReadyBoot" has been reached. As a result,
-
-  events might be lost \(not logged\) to file
-
-  `"C:\WINDOWS\Prefetch\ReadyBoot\ReadyBoot.etl"`. The maximum files size is
-
-  currently set to 20971520 bytes.
-
-* Session "ReadyBoot" stopped due to the following error: 0xC0000188
-* Faulting application name: dwm.exe, version: 10.0.10547.0, time stamp:
-
-  0x55f616ec \(dwm.exe is the desktop window management\).
-
-### Solution 1
-
-An old thread and problem, but one that has been annoying me, and probably a few others. The solution to the error: "Session "ReadyBoot" stopped due to the following error: 0xC0000188" is simple, and it needs no discussion of Prefetch, ReadyBoost, or whether you are using an SSD \(as I am\). The problem, in my case, was that Readyboot needed more than the default 20MB size of the ReadyBoot.etl file to complete, By increasing the ReadyBoot.etl file size to 128MB I was able to see that it required 27MB to complete. I left it at 128MB as that isn't too much space to waste, and it allows for growth. Now that ReadyBoot is completing the above error has gone away. The hint was the warning in the Event Viewer prior to the above error. Specifically; "The maximum file size for session "ReadyBoot" has been reached. As a result, events might be lost \(not logged\) to file `"C:\Windows\Prefetch\ReadyBoot\ReadyBoot.etl"`. The maximum files size is currently set to 20971520 bytes." I just didn't know how to increase the file size before now. So here is the solution, based on a post by "Year" in this post: [http://forums.guru3d.com/showthread.php?t=318837](http://forums.guru3d.com/showthread.php?t=318837) \(I can't post a link at the moment, so you will have to join those two bits to check it out.\) Windows 7 set the ReadyBoot.etl file to 20MB and in the event logger this size often is maxed during boot \(aka not enough\), increasing it can really help. I do not recommend a value above 256mb, the best size imo is 128mb.
-
-How to tweak it:
-
-1. Search, Performance Monitor
-2. on your left side, expand DATA COLLECTORS SETS
-3. Click on STARTUP EVENT TRACES
-4. on your right side you'll find a list, double click READYBOOT
-5. click on the STOP CONDITION tab and set the size you want
-6. press OK , close everything, reboot
-
-To check if it worked, look in the Event Viewer to see the error didn't occur on the last reboot. \(If oyu have been rebooting a bit, note the time of the fix, and look for errors after that time. Also, look in `"C:\Windows\Prefetch\ReadyBoot"` \(or the appropriate directory for your installation\) and note the size of the ReadyBoot.etl file. It will probably be more than 20MB, as mine was.
-
-From [https://social.technet.microsoft.com/Forums/windows/en-US/d74859fb-f1c1-434f-b084-fd26da581c6e/session-readyboot-stopped-due-to-the-following-error-0xc0000188?forum=w7itprogeneral](https://social.technet.microsoft.com/Forums/windows/en-US/d74859fb-f1c1-434f-b084-fd26da581c6e/session-readyboot-stopped-due-to-the-following-error-0xc0000188?forum=w7itprogeneral)
-
-### Solution 2 \(Official MS solution\)
-
-You are getting message that The maximum file size for session "ReadyBoot" has been reached. I have to let you know that ReadyBoot.etl log that tracks all file activity at boot time. Since all file activities done at boot time \(even system updates and spyware scans\) accumulates in this file, it may fill with obsolete information. The fix is to set the ReadyBoot.etl into Circular logging mode, so that only the most recent file access activity is tracked. To do so:
-
-a. Click start, click control panel b. Click administrative tools, performance monitor c. Expand left side tree entry for Data Collection Sets d. Highlight Startup Event Trace Sessions e. Open the ReadyBoot line \(click it\) f. Select the File tab g. Select the circular option h. Click apply and ok and restart the computer.
-
-Superfetch service improves the performance and hence it is suggested to set its startup as automatic. Changing the registry value would increase the max size and it will reach the limit again and then again he may change the registry value.
-
-From [http://answers.microsoft.com/en-us/windows/forum/windows\_7-performance/readyboot-and-superfetch/85d3f5f9-081c-49f3-affa-e9ad2aef2e03?auth=1](http://answers.microsoft.com/en-us/windows/forum/windows_7-performance/readyboot-and-superfetch/85d3f5f9-081c-49f3-affa-e9ad2aef2e03?auth=1)
-
-## Deploying a customized start menu
-
-```text
-Updated 29/07/2015 – RTM day !!
-Today, we will review the different technologies available to manage the good old new start menu (I mean the metro part). This blog post will cover most of the available methods from “supported” to “you’re on your own” because official solutions does not fit in every use case.
-If you’ve been in the start screen “battle” during the Windows 8/8.1 general availability, you will find yourself very comfortable with the start Menu as it is mainly a refresh of what was already in place for the start screen plus a bunch of new options to have even more control !
-
-New capabilities
-Before reviewing the different options available, I'd like to stress a major change in the start menu management: it’s now something that you can edit and customize by hand. You can still set it up on a machine and then export it for your deployments (my preferred way of working) but you can manually add or remove a tile, a group,a most used app, pin the Office suite, go full screen or select how much columns should your menu be. I won’t dive into all those options here, Microsoft has an awful article with a big load of details that you can read here. However, you'll find at the end of this post two of the most requested modifications : 1 column and Full screen menu.
-
-Notice: If some tiles are missing after deploying your customized start screen, there is one thing you need to take care of: If you added tiles that require .url or .lnk files, you must add the .url or .lnk files to one of the following directories:
-* %APPDATA%\Microsoft\Windows\Start Menu\Programs\
-* %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs
-now, let’s check what can be done to deploy that start menu.
-
-1 CopyProfile
-The official method. Require, if you are using MDT, to pause you deployment and set up manually the tiles in your start menu before it can be grabbed to the default profile.
-* Pros : it’s supported
-* Cons : require some infra (at least 2 VM)
-* Cons : Slow and boring process ; you’ll have to sysprep and capture every time someone request an update, meaning that you also  have to deliver a new reference image every time…
-* Cons : Doesn’t works with SCCM out of the box
-2 GPO
-Microsoft has updated GPO to support the start menu. You can find the new setting in Administrative Templates\Start Menu and Taskbar\Start Menu Layout (in both user and machine section):
-
-Because the GPO require an xml input,  Microsoft has also updated his PowerShell commands to import/export Windows 10 start Screen.
-to create your xml use the following :
-    Export-StartLayout -Path C:\Temp\LayoutModification.xml
-Implementation can be done in two ways ; using traditional domain GPO, or using SCM scripts to capture and restore local GPO.
-
-* Pros : It’s supported
-* Pros : Exist as local and domain GPO
-* Pros : Can be applied without a domain/infra if you use local GPO.
-* Pros : start menu can be captured from every where (no more admin/sysprep madness)
-* Cons : You need at least one VM to capture and maintain you local GPO (if and only you use local GPO)
-* Cons : require access right to the GPO console or to be “friend” with the GPO team (if and only you use Domain GPO)
-* Cons : Users can’t change any item in the start Menu (Now you know why it’s a GPO !!)
-
-3 Powershell (with a pinch of Aaron Parker)
-This one is a funnier guy, but it opens our journey to the “unsupported” territory :
-As I said just before, Windows 10 is backed with Powershell commands to export start menu and start screen layout, but also to import them on a target computer. The big gotcha of the import command is his ability to only import layouts to an offline WIM image. 
-While this is technically acceptable (the default profile inside the WIM image is provisioned), this is heavily painful and impossible to automate during an MDT deployment.
-Then entered Aaron Parker who demonstrated that the command just worked over a living online OS. Thanks to him for bringing back the automators frenzy into the game !
-The export part is almost the same as the GPO one ; choose any windows 10 device, customize your start menu and capture it with the following command :
-    Export-StartLayout -Path C:\Temp\LayoutModification.xml
-To apply the menu during an MDT deployment, create a file named SetStartMenu.ps1 and fill it with this command line :
-    Import-StartLayout -LayoutPath C:\Temp\LayoutModification.xml -MountPath $env:SystemDrive\
-Save it to the Scripts folder of your deployment share and insert a “Run Powershell Script” action anywhere after the first reboot (for instance, Custom Tasks is a good candidate) in your task sequence. The action should launch %SCRIPTROOT%\SetStartMenu.ps1 like shown in the screenshot.
-
-Interesting fact : you can even get ride of powershell in your task sequence by simply copying the LayoutModification.xml file to the C:\Users\Default\AppData\Local\Microsoft\Windows\Shell folder.
-
-* Pros : No need of an Active directory
-* Pros : No need to maintain a reference image VM
-* Pros : Solution of choice for OS Deployment !
-* Pros : start menu can be captured from every where
-* Pros : Changing the start menu every five minutes is now fast and painless 
-* Cons : Unsupported (sort of) with Import-StartLayout cmdlet, but supported with the copy process !!… don’t ask…
-
-Customizing layoutModificaton.xml
-Editing your start menu xml is now supported, so it is really possible to create a full menu from scratch ! Needless to say that this is a complete nonsense as you can just grab it in a second using PowerShell.
-However, some settings can’t be reached with this methods especially if you want to achieve one of those two goal:
-
-* Setting the menu to 1 column
-* Going to tablet mode (meaning start menu to full screen)
-* Transforming your CBB start menu to an LTSB start menu
-
-1 Column Menu
-By default the start menu loads with two columns, you can change it to one.
-To set menu to one column, edit the layoutModificaton.xml file and add this code below the first line :  <LayoutOptions StartTileGroupsColumnCount="1" />
-this should looks like this:
-
-Full Screen Menu
-To make your start menu  looks like start screen “a la Windows 8.1”, edit the layoutModificaton.xml file and add this code below the first line :  <LayoutOptions FullScreenStart="true" />
-this should looks like this:
-
-CBB to LTSB Start Menu
-Grabbing a start menu from a CBB release won’t work in an LTSB release. To make it compatible, one line need to be removed from your CBB start menu file. Edit the layoutModificaton.xml file and remove this code below the first line :  <LayoutOptions StartTileGroupCellWidth="6" />
-this should looks like this before:
-
-And like that after:
-
-That’s all you need to know to keep control of your start menu. I will update the post to let you know when the bug is fixed, so don’t forget to come back from time to time.
-Posted 5th December 2014 by Nicolas Lacour
-Labels: customize PowerShell Tips & Tricks Windows 10
-```
-
-From [http://www.osd-couture.com/2014/11/windows-10-deploying-customized-start.html](http://www.osd-couture.com/2014/11/windows-10-deploying-customized-start.html)
-
-## Error 80072efe
-
-connectivity issue of some sort with Windows Update
-
-From [http://answers.microsoft.com/en-us/protect/forum/mse-protect\_updating/error-code-0x80072efe/c23b0915-832f-4b11-9194-68362668d62d?auth=1](http://answers.microsoft.com/en-us/protect/forum/mse-protect_updating/error-code-0x80072efe/c23b0915-832f-4b11-9194-68362668d62d?auth=1)
-
-Turns out my issue was related to my wife setting the computer's date to 2032.
-
-From [http://answers.microsoft.com/en-us/protect/forum/mse-protect\_updating/error-code-0x80072efe/c23b0915-832f-4b11-9194-68362668d62d?auth=1](http://answers.microsoft.com/en-us/protect/forum/mse-protect_updating/error-code-0x80072efe/c23b0915-832f-4b11-9194-68362668d62d?auth=1)
-
-### My solution:
-
-Disabling AdGuard for a couple of seconds.
+**Source**: [http://superuser.com/questions/136838/](http://superuser.com/questions/136838/which-special-variables-are-available-when-writing-a-shell-command-for-a-context)
 
 ## Stop system beep
 

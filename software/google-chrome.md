@@ -1,3 +1,9 @@
+---
+description: >-
+  Anything related to our favorite privacy-leaking browser out there.. And its
+  children Chromium and Edgium (the new Microsoft Edge).
+---
+
 # Google Chrome
 
 ## Remote Device debugging

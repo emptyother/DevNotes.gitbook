@@ -1,3 +1,9 @@
+---
+description: >-
+  VirtualDub is a free and open-source video capture and video processing
+  utility.
+---
+
 # VirtualDub
 
 ## Reading MP4 files

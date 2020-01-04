@@ -2,7 +2,7 @@
 
 * [About](README.md)
 
-## Programming
+## Programming Languages <a id="programming"></a>
 
 * [General Programming Notes](programming/general-development-notes.md)
 * [Code Patterns](programming/code-patterns.md)
@@ -26,18 +26,24 @@
 * [PowerShell](programming/powershell.md)
 * [SVG](programming/svg.md)
 * [Useful APIs](programming/useful-apis.md)
-* [Visual Studio](programming/visual-studio.md)
-* [Visual Studio Code](programming/vscode.md)
 
-## Software
+## Developer Software <a id="dev-software"></a>
 
+* [GIT](dev-software/git/README.md)
+  * [Troubleshooting](dev-software/git/troubleshooting.md)
+* [Visual Studio Code](dev-software/vscode.md)
+* [Visual Studio](dev-software/visual-studio.md)
+
+## General Software <a id="software"></a>
+
+* [AutoHotKey scripts](software/autohotkey-scripts.md)
 * [FFMPEG](software/ffmpeg.md)
 * [Google Chrome](software/google-chrome.md)
 * [Linux](software/linux/README.md)
   * [Apache2](software/linux/apache2.md)
   * [AWK](software/linux/awk.md)
   * [mpg123](software/linux/mp3-to-wav.md)
-  * [Windows Subsystem For Linux](software/linux/windows-subsystem-for-linux/README.md)
+  * [Windows Subsystem for Linux](software/linux/windows-subsystem-for-linux/README.md)
     * [Troubleshooting](software/linux/windows-subsystem-for-linux/troubleshooting.md)
 * [MediaMonkey](software/mediamonkey.md)
 * [Microsoft IIS](software/microsoft-iis/README.md)
@@ -45,6 +51,8 @@
 * [Microsoft Office](software/microsoft-office.md)
 * [Microsoft Windows](software/windows-1/README.md)
   * [Troubleshooting](software/windows-1/troubleshooting.md)
+  * [Task Scheduler](software/windows-1/task-scheduler.md)
+  * [Keyboard shortcuts](software/windows-1/keyboard-shortcuts.md)
   * [Hyper-V troubleshooting](software/windows-1/hyper-v.md)
   * [OneDrive troubleshooting](software/windows-1/onedrive.md)
 * [Mozilla Firefox](software/firefox.md)

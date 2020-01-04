@@ -10,10 +10,7 @@ description: >-
 
 1. Download Android SDK here \("SDK Tools Only" section\) and unzip the content.
 2. Run SDK Manager.exe and install Android SDK platform tools
-3. Open up the Command prompt \(simply by pressing the windows button and type in
-
-   cmd.exe\)
-
+3. Open up the Command prompt.
 4. Enter the path with ex: cd c:/downloads/sdk/platform-tools
 5. Open ADB by typing in adb.exe
 6. Run the following command by typing it and pressing enter: adb devices

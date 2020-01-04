@@ -11,6 +11,8 @@
   * [Asp.NET](programming/dotnet/asp.net.md)
   * [Entity Framework](programming/dotnet/entity-framework/README.md)
     * [Troubleshooting](programming/dotnet/entity-framework/troubleshooting.md)
+  * [LINQ](programming/dotnet/linq.md)
+  * [XML Comments](programming/dotnet/xml-comments.md)
 * [Javascript](programming/javascript/README.md)
   * [Error Types](programming/javascript/error-types.md)
   * [Tools & Libraries](programming/javascript/tools-and-libraries/README.md)
@@ -27,6 +29,11 @@
 * [SVG](programming/svg.md)
 * [Useful APIs](programming/useful-apis.md)
 
+## Scripts
+
+* [AutoHotKey](scripts/autohotkey-scripts.md)
+* [Windows Registry](scripts/windows-registry.md)
+
 ## Developer Software <a id="dev-software"></a>
 
 * [GIT](dev-software/git/README.md)
@@ -36,7 +43,6 @@
 
 ## General Software <a id="software"></a>
 
-* [AutoHotKey scripts](software/autohotkey-scripts.md)
 * [FFMPEG](software/ffmpeg.md)
 * [Google Chrome](software/google-chrome.md)
 * [Linux](software/linux/README.md)
@@ -64,5 +70,6 @@
 
 * [Audio Speaker Experiment](hardware/audio-speaker-experimentation.md)
 * [SteelSeries](hardware/steelseries.md)
+* [Surface Pro troubleshooter](hardware/surface-pro-troubleshooter.md)
 * [Windows Mobile](hardware/windows-mobile.md)
 

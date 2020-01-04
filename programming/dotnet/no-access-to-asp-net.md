@@ -18,5 +18,18 @@ I had a similar issue with the CultureName "UserCache". To resolve this I delete
 
 IIS Express og Visual Studio kjører som din egen bruker og trenger tilgang. Gi din egen bruker skrive-tilgang til denne mappen.
 
+## Page Inspector's Runtime must be installed in the Global Assembly Cache
+
+Edit these files:
+
+* `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config`
+* `C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\web.config`
+
+Add line:
+
+```markup
+<add assembly="Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+```
+
 
 

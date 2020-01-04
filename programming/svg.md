@@ -2,15 +2,9 @@
 
 ## Preview SVG in Windows
 
-For å forhåndsvise SVG i Windows thumbnails, [last ned denne pluginen](https://svgextension.codeplex.com/).
+To preview SVG in Windows thumbnails, [download this plugin](https://archive.codeplex.com/?p=svgextension).
 
-[Source](http://superuser.com/questions/342052/how-to-get-svg-thumbnails-in-windows-explorer).
-
--- Tomandre
-
-## ember-inline-svg
-
-Displays SVG images inline in ember. NPM Package: [https://www.npmjs.com/package/ember-inline-svg](https://www.npmjs.com/package/ember-inline-svg)
+**Source**: [https://superuser.com/questions/342052/](https://superuser.com/questions/342052/)
 
 ## Editing SVGs
 
@@ -32,7 +26,7 @@ The images is already optimized by ember-inline-svg using the svgo package, but 
 
 [https://jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/)
 
-### Beware
+### Beware ⚠
 
 If you use SVGOMG, do not use the "Round/rewrite paths/numbers/transforms". This will make it difficult to open the svg file in editors. This is because SVGOMG changes numbers like 0.14 to .14. This makes a variable like "1.12 0.14" become shortened to "1.12.14". Browsers read this just fine, but editors dont.
 

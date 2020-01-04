@@ -1,16 +1,20 @@
+---
+description: Anything related to MySQL.
+---
+
 # MySQL
 
 ## Backup everything including master data
 
 Hvis databasen er blandet myisam og innodb så må du låse databasen først, da fungerer ikke --single-transaction.
 
-```text
+```bash
 mysqldump -uroot -p --all-databases --routines --flush-privileges --triggers --events --master-data=1 --quick | gzip -1 > ./dbbackup.sql.gz;
 ```
 
 ## Restore
 
-```text
+```bash
 mysql -uroot -p < /mnt/backupdrive/dbbackup.sql.gz;
 ```
 
@@ -41,19 +45,19 @@ To completely disable replication with a master-master setup, you should do the 
 
 I know this is an old question but I found I also has to reset the slave variables. If you use "blah" like suggested, the server will try on start up to find server 'blah'.
 
-```text
+```sql
 CHANGE MASTER TO MASTER_HOST='',MASTER_USER='',MASTER_PASSWORD='';
 ```
 
 You can verify that the machine is no longer a slave
 
-```text
+```sql
 SHOW SLAVE STATUS \G;
 ```
 
 This no longer works. Setting CHANGE MASTER TO MASTER\_HOST='' now throws an error
 
-```text
+```sql
 STOP SLAVE;
 SHOW SLAVE STATUS;
 CHANGE MASTER TO
@@ -88,7 +92,7 @@ while I am trying to fetch the data from a MySQL database. I have the date datat
 
 **Answer**: You must add Convert Zero Datetime=True to your connection string, for example:
 
-```text
+```bash
 server=localhost;User Id=root;password=mautauaja;Persist Security Info=True;database=test;Convert Zero Datetime=True
 ```
 
@@ -105,7 +109,7 @@ SQL Editor > MySQL Session > DBMS connection keep-alive interval
 
 The default here was set to 600 seconds. I've reduced that 30 seconds. No issues so far.
 
-Source: [https://bugs.mysql.com/bug.php?id=69241](https://bugs.mysql.com/bug.php?id=69241)
+**Source**: [https://bugs.mysql.com/bug.php?id=69241](https://bugs.mysql.com/bug.php?id=69241)
 
 ## How to re-sync the Mysql DB if Master and slave have different database incase of Mysql replication
 
@@ -113,7 +117,7 @@ This is the full step-by-step procedure to resync a master-slave replication fro
 
 At the master:
 
-```text
+```sql
 RESET MASTER;
 FLUSH TABLES WITH READ LOCK;
 SHOW MASTER STATUS;
@@ -123,13 +127,13 @@ And copy the values of the result of the last command somewhere.
 
 Without closing the connection to the client \(because it would release the read lock\) issue the command to get a dump of the master:
 
-```text
+```bash
 mysqldump -u root -p --all-databases > /a/path/mysqldump.sql
 ```
 
 Now you can release the lock, even if the dump hasn't ended yet. To do it, perform the following command in the MySQL client:
 
-```text
+```sql
 UNLOCK TABLES;
 ```
 
@@ -137,7 +141,7 @@ Now copy the dump file to the slave using scp or your preferred tool.
 
 At the slave, open a connection to mysql and type:
 
-```text
+```sql
 STOP SLAVE;
 ```
 
@@ -147,7 +151,7 @@ mysql -uroot -p &lt; mysqldump.sql
 
 Sync slave and master logs:
 
-```text
+```sql
 RESET SLAVE;
 CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=98;
 ```
@@ -156,24 +160,24 @@ Where the values of the above fields are the ones you copied before.
 
 Finally, type:
 
-```text
+```sql
 START SLAVE;
 ```
 
 To check that everything is working again, after typing:
 
-```text
+```sql
 SHOW SLAVE STATUS;
 ```
 
 you should see:
 
-```text
+```bash
 Slave_IO_Running: Yes
 Slave_SQL_Running: Yes
 ```
 
 That's it!
 
-Source: [stackoverflow.com](http://stackoverflow.com/questions/2366018/how-to-re-sync-the-mysql-db-if-master-and-slave-have-different-database-incase-o)
+**Source**: [stackoverflow.com](http://stackoverflow.com/questions/2366018/how-to-re-sync-the-mysql-db-if-master-and-slave-have-different-database-incase-o)
 

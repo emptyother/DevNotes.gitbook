@@ -26,20 +26,13 @@ Add "Listen 8080" to `/etc/apache2/ports.conf`
 
 ## Block search engines from reading page
 
-En måte å hindre indeksering på testmaskinene er å legge til headeren X-Robots-Tag = "noindex, nofollow". For Linux Apache så kan en gjøre følgende:
+One way to prevent indexing is to add the header X-Robots-Tag = "noindex, nofollow". For Linux Apache, you can do the following:
 
-1. Apache må ha header modulen installert. Installer ved å skrive "a2enmod
+1. Apache must have the `header` module installed. Install by typing `a2enmod headers` then `service apache2 restart`.
+2. Open the config file for your page, usually `/etc/apache2/sites-available/site-name`\) and append the following:
 
-   headers" også "service apache2 restart".
-
-2. Åpne config-filen for siden \(vanligvis
-
-   `/etc/apache2/sites-available/site-name`\) og legg inn følgende setning under
-
-```text
+```bash
     <Directory /var/www/[siteroot]>:
         Header append X-Robots-Tag "noindex, nofollow"
 ```
-
-**For Windows IIS så kan en gjøre følgende:** Under IIS Manager finn "HTTP Response Headers" \(enten i server-rooten eller under en av sitene\) og legg til headeren "X-Robots-Tag" med verdien "noindex, nofollow".
 

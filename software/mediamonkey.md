@@ -25,7 +25,7 @@ Solution: File: %userprofile%\AppData\Roaming\MediaMonkey\Scripts\DiscogsAutoTag
 
 ## Auto-Organize Path for sorting into a Onedrive music folder
 
-```text
-.\OneDrive\Musikk\<Album Artist>\<Album>\$If(<Disc#>,\Disc <Disc#>)\$If(<Track#>, <Track#> - )<Title>
+```markup
+.\OneDrive\Music\<Album Artist>\<Album>\$If(<Disc#>,\Disc <Disc#>)\$If(<Track#>, <Track#> - )<Title>
 ```
 

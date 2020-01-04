@@ -17,7 +17,7 @@
 
 ### Node module template
 
-```text
+```javascript
 <className>.js
 var <ClassName> = function() {};
 <ClassName>.prototype.<methodName> = function(a) { return a; };
@@ -26,14 +26,14 @@ module.exports = <ClassName>;
 
 How to use in other files
 
-```text
+```javascript
 var <ClassName> = require('./<className>');
 <ClassName>.<methodName>('a');  //Returns the string 'a'.
 ```
 
 Local modules are included like paths, but the file extension \(.js\) is optional. Node modules are included using its friendly name:
 
-```text
+```javascript
 require('fs');  //Includes the node module 'fs'
 ```
 
@@ -55,7 +55,7 @@ ECMA-262, 3rd Edition actually specifies seven error object types. These are use
 
 **Create your own error type that inherits from Error**
 
-```text
+```javascript
 function MyError(message){
     this.message = message;
 }
@@ -67,17 +67,17 @@ throw new MyError("Hello world!");
 
 #### Localstorage, calculate size
 
-Source: [http://stackoverflow.com/questions/11613604/how-to-get-total-html5-storage-size-used-by-current-application](http://stackoverflow.com/questions/11613604/how-to-get-total-html5-storage-size-used-by-current-application)
+**Source:** [http://stackoverflow.com/questions/11613604/](http://stackoverflow.com/questions/11613604/how-to-get-total-html5-storage-size-used-by-current-application)
 
 Size:
 
-```text
+```javascript
 unescape(encodeURIComponent(JSON.stringify(localStorage))).length
 ```
 
 Remaining size:
 
-```text
+```javascript
 var limit = 1024 * 1024 * 5; // 5 MB
 var remSpace = limit - unescape(encodeURIComponent(JSON.stringify(localStorage))).length;
 ```

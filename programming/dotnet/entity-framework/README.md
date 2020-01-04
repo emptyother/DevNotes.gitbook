@@ -1,3 +1,7 @@
+---
+description: Tips and tricks for Entity Framework.
+---
+
 # Entity Framework
 
 ## Dictionary
@@ -19,19 +23,19 @@
 
 Disable database migration:
 
-```text
+```csharp
 System.Data.Entity.Database.SetInitializer<MyDbContext>(null);
 ```
 
 Enable lazy loading:
 
-```text
+```csharp
 Configuration.LazyLoadingEnabled = true;
 ```
 
 ## Useful class attributes
 
-```text
+```csharp
 using System.ComponentModel.DataAnnotations.Schema;
 ```
 
@@ -43,7 +47,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 ## Useful property attributes
 
-```text
+```csharp
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 ```
@@ -86,7 +90,7 @@ Context.MeasurementType.Load();
 Context.Measurements.Where(m => m.MeasurementTime >= DateTime.Now.AddDays(-1)).ToList();
 ```
 
-[Source](https://stackoverflow.com/questions/19319116/include-vs-load-performance-in-entityframework).
+**Source**: [https://stackoverflow.com/questions/19319116/](https://stackoverflow.com/questions/19319116/)
 
 **Alternative 3**:
 
@@ -102,6 +106,8 @@ public virtual D_agegroup D_agegroup { get; set; }
 ```
 
 ## Lists
+
+**Source**: [https://stackoverflow.com/questions/10113244/](https://stackoverflow.com/questions/10113244/why-use-icollection-and-not-ienumerable-or-listt-on-many-many-one-many-relatio)
 
 | Type | Usage |
 | :--- | :--- |

@@ -1,16 +1,18 @@
-# Powershell
+---
+description: Anything related to Powershell.
+---
 
-\# Powershell
+# Powershell
 
 ## Using Regex
 
-```text
+```bash
 $yourTextualOutput | % { $_ -match '^.*\\(.*)$' | Out-Null; $matches[1] }
 ```
 
 ## Creating Symlinks or Hardlinks or junctions
 
-```text
+```bash
 New-Item -ItemType HardLink -Name github.js -Target ..\github.js
 ```
 

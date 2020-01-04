@@ -1,4 +1,8 @@
-# ExtJs
+---
+description: Anything related to the ExtJs 3 javascript library.
+---
+
+# ExtJs 3
 
 ## Ext.util.Observable
 

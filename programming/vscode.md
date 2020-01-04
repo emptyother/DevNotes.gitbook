@@ -1,4 +1,8 @@
-# VSCode
+---
+description: 'Anything related to VSCode, Microsoft new cross-platform code editor.'
+---
+
+# Visual Studio Code
 
 ## VSCode wont run debugging
 

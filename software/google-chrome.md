@@ -23,13 +23,13 @@ Du kan også installere Android SDK sammen med Visual Studio. I så tilfelle er 
 
 ## Useful command line arguments for Chrome
 
-```text
+```bash
 --remote-debugging-port=9222
 ```
 
 Port 9222 is the port most chrome debugger clients expects.
 
-```text
+```bash
 --no-first-run
 --no-default-browser-check
 --user-data-dir=<custom data dir>

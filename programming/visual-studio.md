@@ -1,3 +1,7 @@
+---
+description: Anything related to Visual Studio 20xx. Look elsewhere for Visual Studio Code.
+---
+
 # Visual Studio
 
 ## Where is Visual Studio's "browse with..." list saved?
@@ -27,12 +31,6 @@ I'm not 100% certain on the cause of it, or what combinations of VS 2012/2013 wo
 ```
 
 This resolved the issue for me.
-
-## Entity Framework error
-
-**Error:** System.Data.Entity.Core.MappingException: The type 'Edm.Boolean' does not match with the type System.Int32 on the object side
-
-**Solution:** EF doesnt like having two tables/objects with the same name in two different databases, even if the table isnt included in the database model. Fixed it by moving one of the database object definition \(\*.edmx\) into another project.
 
 ## Requested registry access is not allowed
 

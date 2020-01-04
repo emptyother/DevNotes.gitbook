@@ -8,3 +8,5 @@ _Most_ of this is cut-and-paste info from Stackexchange or other pages. _Some_ o
 
 This also means that a lot of info here isn't always up to date. Check the source links if they still exists.
 
+Some of it is written in Norwegian. Sorry about that. I might translate it eventually.
+

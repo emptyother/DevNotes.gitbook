@@ -1,33 +1,4 @@
----
-description: Anything related to MySQL.
----
-
-# MySQL
-
-## Backup everything including master data
-
-Hvis databasen er blandet myisam og innodb så må du låse databasen først, da fungerer ikke --single-transaction.
-
-```bash
-mysqldump -uroot -p --all-databases --routines --flush-privileges --triggers --events --master-data=1 --quick | gzip -1 > ./dbbackup.sql.gz;
-```
-
-## Restore
-
-```bash
-mysql -uroot -p < /mnt/backupdrive/dbbackup.sql.gz;
-```
-
-## Ikke bruk Stored Procedures eller Functions med mindre det sparer nettverkstrafikk
-
-En stored procedure er tregere. At serveren optimaliserer er en myte.
-
-Kode er vanskeligere å vedlikeholde:
-
-* Må kjøre dbupdate hver gang spørringen endres.
-* Koden blir ikke inkludert i kode-repositoriet.
-
-Hvis spørringen ville krevd flere spørringer fram og tilbake men ville vært raskere å putte i en procedure, da kan du bruke en stored procedure eller function.
+# Database Replication
 
 ## Turn slave into master
 
@@ -78,38 +49,7 @@ The quickest and dirtiest way to clear slave info from a MySQL instance
 
 That should do it for you !!!
 
-Source: [dba.stackexchange.com](http://dba.stackexchange.com/questions/21087/how-to-change-a-mysql-previous-slave-to-be-a-master-and-remove-slave-status-info)
-
-## Unable to convert MySQL date/time value to C\#'s System.DateTime
-
-I get this error:
-
-```text
-Unable to convert MySQL date/time value to System.DateTime
-```
-
-while I am trying to fetch the data from a MySQL database. I have the date datatype in my MySQL database. But while retrieving it into my datatable, it get the error above. How can I fix this?
-
-**Answer**: You must add Convert Zero Datetime=True to your connection string, for example:
-
-```bash
-server=localhost;User Id=root;password=mautauaja;Persist Security Info=True;database=test;Convert Zero Datetime=True
-```
-
-Source: [http://stackoverflow.com/questions/5754822/unable-to-convert-mysql-date-time-value-to-system-datetime](http://stackoverflow.com/questions/5754822/unable-to-convert-mysql-date-time-value-to-system-datetime)
-
-## MySQL Workbench hangs
-
-I was ready to throw away workbench due to the frequent freezes every time I worked with. Found this thread, and noticing the timeout issue, tried this:
-
-```text
-Edit > Preferences
-SQL Editor > MySQL Session > DBMS connection keep-alive interval
-```
-
-The default here was set to 600 seconds. I've reduced that 30 seconds. No issues so far.
-
-**Source**: [https://bugs.mysql.com/bug.php?id=69241](https://bugs.mysql.com/bug.php?id=69241)
+**Source**: [dba.stackexchange.com](http://dba.stackexchange.com/questions/21087/how-to-change-a-mysql-previous-slave-to-be-a-master-and-remove-slave-status-info)
 
 ## How to re-sync the Mysql DB if Master and slave have different database incase of Mysql replication
 

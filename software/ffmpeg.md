@@ -12,7 +12,7 @@ description: >-
 ### Add logo
 
 ```bash
-ffmpeg.exe -i 11085.2b.mp4 -i logo.png -filter_complex "overlay=W-w-20:20" -codec:a copy wlogo.mp4
+ffmpeg.exe -i inputfile.mp4 -i logo.png -filter_complex "overlay=W-w-20:20" -codec:a copy outputfile.mp4
 ```
 
 ### Convert and scale

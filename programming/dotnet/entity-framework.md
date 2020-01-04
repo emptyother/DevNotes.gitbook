@@ -68,7 +68,7 @@ using Newtonsoft.Json;
 
 If you want the values of related items, you need to include them. This also includes anything else from the same related table, so if your column have multiple references to a user table then all of them will be included even if you only specified one.
 
-```text
+```csharp
 using System.Data.Entity;
 M_d_exercises.Include(e => e.Createdby)
 ```
@@ -77,7 +77,7 @@ M_d_exercises.Include(e => e.Createdby)
 
 There is also a method called `Load()`. Consider using that instead:
 
-```text
+```csharp
 Context.Products.Load();
 Context.ProductVersions.Load();
 Context.Lines.Load();
@@ -96,7 +96,7 @@ You can do lazy loading.
 
 If lazy loading is enabled, any field that has the "virtual" modifier will be loaded when you try to access it.
 
-```text
+```csharp
 [ForeignKey("D_agegroup_id")]
 public virtual D_agegroup D_agegroup { get; set; }
 ```

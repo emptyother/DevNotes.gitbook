@@ -2,6 +2,25 @@
 
 * [DevNotes](README.md)
 
+## Programming
+
+* [General Programming Notes](programming/general-development-notes.md)
+* [Code Patterns](programming/code-patterns.md)
+* [DotNet](programming/dotnet/README.md)
+  * [ASP.NET](programming/dotnet/asp.net.md)
+  * [Entity Framework](programming/dotnet/entity-framework.md)
+  * [Troubleshooting](programming/dotnet/no-access-to-asp-net.md)
+* [Javascript](programming/javascript/README.md)
+  * [ExtJs](programming/javascript/extjs.md)
+  * [NPM](programming/javascript/npm.md)
+  * [Typescript](programming/javascript/typescript.md)
+* [MySQL](programming/mysql.md)
+* [Powershell](programming/powershell.md)
+* [SVG](programming/svg.md)
+* [Useful APIs](programming/useful-apis.md)
+* [Visual Studio](programming/visual-studio.md)
+* [VSCode](programming/vscode.md)
+
 ## Software
 
 * [FFMPEG](software/ffmpeg.md)
@@ -21,24 +40,6 @@
 * [Spotify](software/spotify.md)
 * [SQL Server](software/sql-server.md)
 * [VirtualDub](software/virtualdub.md)
-
-## Programming
-
-* [General Programming Notes](programming/general-development-notes.md)
-* [DotNet](programming/dotnet/README.md)
-  * [ASP.NET](programming/dotnet/asp.net.md)
-  * [Entity Framework](programming/dotnet/entity-framework.md)
-  * [Troubleshooting](programming/dotnet/no-access-to-asp-net.md)
-* [Javascript](programming/javascript/README.md)
-  * [ExtJs](programming/javascript/extjs.md)
-  * [NPM](programming/javascript/npm.md)
-  * [Typescript](programming/javascript/typescript.md)
-* [MySQL](programming/mysql.md)
-* [Powershell](programming/powershell.md)
-* [SVG](programming/svg.md)
-* [Useful APIs](programming/useful-apis.md)
-* [Visual Studio](programming/visual-studio.md)
-* [VSCode](programming/vscode.md)
 
 ## Hardware
 

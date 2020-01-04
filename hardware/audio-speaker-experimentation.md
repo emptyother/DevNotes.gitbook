@@ -2,7 +2,7 @@
 description: Testing the quality of my audio speakers.
 ---
 
-# Audio Speaker experimentation
+# Audio Speaker Experiment
 
 ### Links
 

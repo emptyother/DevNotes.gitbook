@@ -1,6 +1,12 @@
-# SteelSeries SDK
+---
+description: Anything related to SteelSeries keyboards and mouse and other hardware.
+---
 
-Description The device \(a Steelseries Apex M800 Series keyboard\) runs a local webservice to listen for JSON webrequests. It then uses that data with one of its own scripts written in GoLisp, a programming language created by Steelseries.
+# SteelSeries
+
+## SteelSeries SDK
+
+The device _\(a Steelseries Apex M800 Series keyboard\)_ runs a local webservice to listen for JSON webrequests. It then uses that data with one of its own scripts written in GoLisp, a programming language created by Steelseries.
 
 |  | Links |
 | :--- | :--- |
@@ -12,7 +18,7 @@ Description The device \(a Steelseries Apex M800 Series keyboard\) runs a local 
 | Server url and port: | `C:\ProgramData\SteelSeries\SteelSeries Engine 3\coreProps.json` |
 | Device Script folder: | `C:\ProgramData\SteelSeries\SteelSeries Engine 3\hax0rBindings\` |
 
-## Example Script 1 \(client/game\)
+### Example Script 1 \(client/game\)
 
 This sends a webrequest to the already existing "Audiovisualizer.lsp" device script.
 

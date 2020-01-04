@@ -2,7 +2,7 @@
 
 ## How to: Dramatically improve the sound of the Lumia 950 XL speaker
 
-Source: [http://allaboutwindowsphone.com/features/item/21756\_How\_to\_Dramatically\_improve\_th.php](http://allaboutwindowsphone.com/features/item/21756_How_to_Dramatically_improve_th.php)
+**Source**: [http://allaboutwindowsphone.com/features/item/21756\_How\_to\_Dramatically\_improve\_th.php](http://allaboutwindowsphone.com/features/item/21756_How_to_Dramatically_improve_th.php)
 
 | Hz | dB |
 | ---: | ---: |
@@ -13,8 +13,6 @@ Source: [http://allaboutwindowsphone.com/features/item/21756\_How\_to\_Dramatica
 | 2400 | -4 |
 | 3700 | 3 |
 | 6200 | 12 |
-
-Published by Steve Litchfield at 13:52 UTC, October 10th 2016
 
 Did you know that your Lumia smartphone had an equaliser built-in? Possibly. But did you know that a\) it doesn't only work with Groove Music, it works system wide, and b\) it also works with the speaker on your phone and not just headphones? While this wouldn't be that notable on phones with a decent enough speaker, the Lumia 950 XL, in particular, has an unpleasantly tinny component \(I went into detail here\). Begging the question, can a little tweaking save the day?
 
@@ -31,8 +29,4 @@ Of course, all the EQ fiddling in the world won't get a speaker more than a few 
 ### Some notes:
 
 The 'preset for speakers' has no effect on the preset setting for headphones, they're kept entirely separate. So you're not going to mess up your preferred headset set-up with this tweak.
-
-I've referred to 'Lumias' above because Windows 10 Mobile, out of the box for OEMs, doesn't include a system-wide equaliser, unless I'm mistaken? Comments welcome if you can suggest other equaliser utilities - what limits do they have under Windows 10 Mobile?
-
-\(Thanks to Jason Snowden for the nudge to write this up!\)
 

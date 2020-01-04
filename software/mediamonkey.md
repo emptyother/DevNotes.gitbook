@@ -1,3 +1,7 @@
+---
+description: A digital media player and media library application.
+---
+
 # MediaMonkey
 
 ## Retrieved lyrics get html tag codes in them

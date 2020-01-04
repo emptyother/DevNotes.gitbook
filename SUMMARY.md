@@ -18,7 +18,7 @@
   * [Typescript](programming/javascript/typescript.md)
 * [MSSQL](programming/sql-server.md)
 * [MySQL](programming/mysql.md)
-* [Powershell](programming/powershell.md)
+* [PowerShell](programming/powershell.md)
 * [SVG](programming/svg.md)
 * [Useful APIs](programming/useful-apis.md)
 * [Visual Studio](programming/visual-studio.md)
@@ -49,8 +49,7 @@
 
 ## Hardware
 
-* [Audio](hardware/audio/README.md)
-  * [Audio Speaker experimentation](hardware/audio/audio-speaker-experimentation.md)
-* [SteelSeries SDK](hardware/steelseries.md)
+* [Audio Speaker Experiment](hardware/audio-speaker-experimentation.md)
+* [SteelSeries](hardware/steelseries.md)
 * [Windows Mobile](hardware/windows-mobile.md)
 

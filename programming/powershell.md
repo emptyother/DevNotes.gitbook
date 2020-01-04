@@ -2,7 +2,7 @@
 description: Anything related to Powershell.
 ---
 
-# Powershell
+# PowerShell
 
 ## Using Regex
 

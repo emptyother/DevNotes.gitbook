@@ -11,37 +11,8 @@ description: >-
 
 A class with a private constructor. Then how do you call the constructor? By calling a public method within the constructor which cakes the constructor \(if necessary\) and then returns itself.
 
-[http://csharpindepth.com/Articles/General/Singleton.aspx](http://csharpindepth.com/Articles/General/Singleton.aspx)
-
-```csharp
-    public sealed class Singleton
-    {
-        private static Singleton instance = null;
-        private static readonly object padlock = new object();
-
-        Singleton()
-        {
-        }
-
-        public static Singleton Instance
-        {
-            get
-            {
-                lock (padlock)
-                {
-                    if (instance == null)
-                    {
-                        instance = new Singleton();
-                    }
-                    return instance;
-                }
-            }
-        }
-    }
-```
-
-Or cleaner:
-
+{% tabs %}
+{% tab title="C\#" %}
 ```csharp
     public sealed class Singleton
     {
@@ -66,4 +37,35 @@ Or cleaner:
         }
     }
 ```
+{% endtab %}
+
+{% tab title="C\# Thread-safe" %}
+```csharp
+public sealed class Singleton
+{
+    private static Singleton instance = null;
+    private static readonly object padlock = new object();
+
+    Singleton()
+    {
+    }
+
+    public static Singleton Instance
+    {
+        get
+        {
+            lock (padlock)
+            {
+                if (instance == null)
+                {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        }
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
 

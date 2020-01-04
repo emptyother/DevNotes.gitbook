@@ -47,24 +47,3 @@ The application and its controllers and routes. Contains action logic. Requests 
 
 Views. Rendered after retrieving a model. Renders html. Binds actions to UI events. Might subscribe to events from the store, and might refresh if a certain event is fired.
 
-## Ikke kast exceptions med mindre det skjer en feil.
-
-Hvis en spørring ikke finner resultatet så er det IKKE en feil. Det er forventet. Returner heller et tomt objekt. Hvis en spørring spør etter ingenting \(for eksempel prøver å finne et objekt med id=0\) så returner et tomt objekt istedenfor å lage feilmelding.
-
-Eksempel:
-
-1. Du gjør en spørring etter et treningsprogram.
-2. Treningsprogrammet ble laget av en bruker med id 33. Denne brukeren har blitt
-
-   slettet.
-
-3. Hvis en exception skjer her bare fordi brukeren ikke ble funnet så får du
-
-   ikke treningsprogrammet.
-
-4. Hvis du returnerte et tomt objekt isteden så ville du fått treningsprogrammet
-
-   med et tomt felt isteden, som ville vært foretrukket framfor at hele kjeden
-
-   krasjer.
-

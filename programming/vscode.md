@@ -1,5 +1,7 @@
 ---
-description: 'Anything related to VSCode, Microsoft new cross-platform code editor.'
+description: >-
+  Anything related to VSCode, Microsoft new light-weight cross-platform code
+  editor. Look elsewhere for Visual Studio.
 ---
 
 # Visual Studio Code

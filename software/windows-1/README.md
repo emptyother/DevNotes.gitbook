@@ -362,5 +362,9 @@ Actual path might differ because of bad translation...
 | :--- | :--- |
 | Hide shared shortcuts from start menu | Userconfig\Administrative Templates\Start-menu and taskbar\Remove common program groups from Start menu |
 
-## 
+## Useful keyboard shortcuts
+
+| Command | Description |
+| :--- | :--- |
+| `Ctrl+Shift+Win+B` | Restart graphics card driver |
 

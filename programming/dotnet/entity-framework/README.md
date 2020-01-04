@@ -11,6 +11,14 @@ description: Tips and tricks for Entity Framework.
 | Entity | A class in entity framework. |
 | Navigation object | These properties: `public virtual ICollection<ChildItems> ChildItems { get; set; }`. |
 
+## Tips
+
+* Chain multiple LINQ queries instead of doing everything inside one query. LINQ
+
+  does a fair bit of optimizing at runtime, and all this will be wasted if you
+
+  do Where\(p1==4 && p2==5\).
+
 ## Configuration in the constructor
 
 Disable database migration:
@@ -106,4 +114,6 @@ public virtual D_agegroup D_agegroup { get; set; }
 | `IEnumerable<>` | List of objects that only needs to be iterated through. |
 | `ICollection<>` | List of objects that needs to be iterated and modified. In order for the dynamic proxy to be created as a navigation property, the virtual type must implement ICollection. |
 | `List<>` | List of objects that needs to be iterated, modified, sorted, etc. |
+
+* [Source 1](https://stackoverflow.com/questions/10113244/why-use-icollection-and-not-ienumerable-or-listt-on-many-many-one-many-relatio)
 

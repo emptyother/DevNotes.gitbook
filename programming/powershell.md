@@ -4,10 +4,6 @@ description: Anything related to Powershell.
 
 # PowerShell
 
-## Output from Start-Process
-
-Use the `-NoNewWindow -Wait` parameters.
-
 ## Using Regex
 
 ```bash

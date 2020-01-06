@@ -43,6 +43,7 @@
 
 ## General Software <a id="software"></a>
 
+* [Apps](software/apps.md)
 * [FFMPEG](software/ffmpeg.md)
 * [Google Chrome](software/google-chrome.md)
 * [Linux](software/linux/README.md)

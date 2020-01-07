@@ -78,5 +78,7 @@ Varous software package sources.
 | :--- | :--- |
 | [Sumatra PDF](https://www.sumatrapdfreader.org/) | PDF Reader. |
 | [Directory Opus](https://www.gpsoft.com.au/) | Windows File Explorer replacement. |
+| MusicBee | Music player and library manager. |
+| MediaMonkey | Music player and library manager. Unreliable Last.FM plugin. |
 |  |  |
 

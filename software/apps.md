@@ -72,3 +72,10 @@ Varous software package sources.
 | WiFi Commander |  |
 | Office Lens |  |
 
+## Others
+
+| Name | Description |
+| :--- | :--- |
+| [Sumatra PDF](https://www.sumatrapdfreader.org/) | PDF Reader. |
+|  |  |
+

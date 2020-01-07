@@ -14,6 +14,7 @@
   * [LINQ](programming/dotnet/linq.md)
   * [XML Comments](programming/dotnet/xml-comments.md)
 * [Javascript](programming/javascript/README.md)
+  * [C\#'s LINQ methods in JS](programming/javascript/c-s-linq-methods-in-js.md)
   * [Error Types](programming/javascript/error-types.md)
   * [Tools & Libraries](programming/javascript/tools-and-libraries/README.md)
     * [Ember.js](programming/javascript/tools-and-libraries/ember.js.md)

@@ -77,5 +77,6 @@ Varous software package sources.
 | Name | Description |
 | :--- | :--- |
 | [Sumatra PDF](https://www.sumatrapdfreader.org/) | PDF Reader. |
+| [Directory Opus](https://www.gpsoft.com.au/) | Windows File Explorer replacement. |
 |  |  |
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  About Nokia/Microsoft Lumia 920-1080 the best phone series that ever existed.
+  Too bad they are deprecated, discontinued, and gone now.
+---
+
 # Windows Mobile
 
 ## How to: Dramatically improve the sound of the Lumia 950 XL speaker
@@ -5,7 +11,7 @@
 **Source**: [http://allaboutwindowsphone.com/features/item/21756\_How\_to\_Dramatically\_improve\_th.php](http://allaboutwindowsphone.com/features/item/21756_How_to_Dramatically_improve_th.php)
 
 | Hz | dB |
-| ---: | ---: |
+| :--- | :--- |
 | 400 | 10 |
 | 620 | 6 |
 | 960 | -0 |

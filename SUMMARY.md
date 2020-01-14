@@ -39,8 +39,8 @@
 
 * [GIT](dev-software/git/README.md)
   * [Troubleshooting](dev-software/git/troubleshooting.md)
-* [Visual Studio Code](programming/vscode.md)
-* [Visual Studio](programming/visual-studio.md)
+* [Visual Studio Code](dev-software/vscode.md)
+* [Visual Studio](dev-software/visual-studio.md)
 
 ## General Software <a id="software"></a>
 
@@ -58,11 +58,12 @@
   * [Troubleshooting](software/microsoft-iis/troubleshooting.md)
 * [Microsoft Office](software/microsoft-office.md)
 * [Microsoft Windows](software/windows-1/README.md)
-  * [Troubleshooting](software/windows-1/troubleshooting.md)
+  * [Troubleshooting](software/windows-1/troubleshooting/README.md)
+    * [OneDrive troubleshooting](software/windows-1/troubleshooting/onedrive.md)
+    * [Hyper-V troubleshooting](software/windows-1/troubleshooting/hyper-v.md)
   * [Task Scheduler](software/windows-1/task-scheduler.md)
+  * [Snip & Sketch](software/windows-1/snip-and-sketch.md)
   * [Keyboard shortcuts](software/windows-1/keyboard-shortcuts.md)
-  * [Hyper-V troubleshooting](software/windows-1/hyper-v.md)
-  * [OneDrive troubleshooting](software/windows-1/onedrive.md)
 * [Mozilla Firefox](software/firefox.md)
 * [Nagios Core](software/nagios.md)
 * [Spotify](software/spotify.md)

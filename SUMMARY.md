@@ -1,6 +1,7 @@
 # Table of contents
 
 * [About](README.md)
+* [Recommended Software](apps.md)
 
 ## Programming Languages <a id="programming"></a>
 
@@ -44,7 +45,7 @@
 
 ## General Software <a id="software"></a>
 
-* [Apps](software/apps.md)
+* [Directory Opus](software/directory-opus.md)
 * [FFMPEG](software/ffmpeg.md)
 * [Google Chrome](software/google-chrome.md)
 * [Linux](software/linux/README.md)

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About](README.md)
-* [Recommended Software](apps.md)
+* [Recommended Software](software/apps.md)
 
 ## Programming Languages <a id="programming"></a>
 

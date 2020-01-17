@@ -14,3 +14,11 @@ Windows Registry Editor Version 5.00
 "TxAMSDU"=dword:00000000
 ```
 
+## Insert-key doesn't work
+
+Pressing the `Ins` key on the Surface Pro keyboard only trigger a delete.
+
+**Solution**: Hold the `Fn` key when you press `Del` to trigger a Insert. 
+
+
+

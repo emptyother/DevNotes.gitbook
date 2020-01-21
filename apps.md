@@ -2,7 +2,7 @@
 description: 'Lists of useful apps, sorted by installation source.'
 ---
 
-# Apps
+# Recommended Software
 
 ## Software Sources
 

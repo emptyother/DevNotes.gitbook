@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About](README.md)
-* [Recommended Software](software/apps.md)
+* [Recommended Software](apps.md)
 
 ## Programming Languages <a id="programming"></a>
 
@@ -41,7 +41,8 @@
 * [GIT](dev-software/git/README.md)
   * [Troubleshooting](dev-software/git/troubleshooting.md)
 * [Visual Studio Code](dev-software/vscode.md)
-* [Visual Studio](dev-software/visual-studio.md)
+* [Visual Studio](dev-software/visual-studio/README.md)
+  * [IIS Express](dev-software/visual-studio/iis-express.md)
 
 ## General Software <a id="software"></a>
 

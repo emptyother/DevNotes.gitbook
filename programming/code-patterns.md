@@ -69,3 +69,36 @@ public sealed class Singleton
 {% endtab %}
 {% endtabs %}
 
+### Async-Retry
+
+Retry a promise until it's return value matches your expectations.
+
+{% tabs %}
+{% tab title="TypeScript" %}
+```typescript
+async function retrier<T>(
+    promise: Promise<T>,
+    checkFn: ValFunc<T>,
+    maxRequests: number,
+    waitTime: number,
+    attempts = 0
+): Promise<T> {
+    if (++attempts > maxRequests) {
+        throw new Error("Max attempts tried.");
+    }
+    // Await some request:
+    var ret = await promise;
+    if (!checkFn(ret)) {
+        await delay(waitTime);
+        return retrier(promise, checkFn, maxRequests, waitTime, attempts);
+    }
+    return Promise.resolve(ret);
+}
+type ValFunc<T> = (value: T) => boolean;
+async function delay(milliseconds: number): Promise<void> {
+    return new Promise<void>(resolve => setTimeout(resolve, milliseconds));
+}
+```
+{% endtab %}
+{% endtabs %}
+

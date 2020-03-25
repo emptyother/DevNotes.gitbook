@@ -38,3 +38,7 @@ Port 9222 is the port most chrome debugger clients expects.
 --user-data-dir=<custom data dir>
 ```
 
+## CORS Requests are hidden in Chrome network tab
+
+To show CORS request in Chrome network tab \(it has been disabled for performance reasons\), go to `chrome://flags/#out-of-blink-cors` and disable that setting.
+

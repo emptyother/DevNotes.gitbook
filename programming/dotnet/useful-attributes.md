@@ -38,6 +38,15 @@ AllowPet petsAllowed = Allow.Cat | Allow.Fish;
 
 Dont serialize this property.
 
+### DebuggerDisplayAttribute
+
+When showing values while debugging, this decides what the right column \(summary of the item\) should contain. Usually it just shows a serialized string of the class.
+
+```csharp
+[DebuggerDisplay("{Firstname} {Lastname}")]
+public class User { /*...*/ }
+```
+
 ## Debugging
 
 ### ConditionalAttribute

@@ -7,7 +7,8 @@
 
 * [General Programming Notes](programming/general-development-notes.md)
 * [Code Patterns](programming/code-patterns.md)
-* [.NET](programming/dotnet/README.md)
+* [C\# and .NET](programming/dotnet/README.md)
+  * [Useful attributes](programming/dotnet/useful-attributes.md)
   * [Troubleshooting](programming/dotnet/no-access-to-asp-net.md)
   * [Asp.NET](programming/dotnet/asp.net.md)
   * [Entity Framework](programming/dotnet/entity-framework/README.md)

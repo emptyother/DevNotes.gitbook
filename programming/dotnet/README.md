@@ -1,8 +1,8 @@
 ---
-description: Anything related to .NET and .NET Core.
+description: 'Anything related to C#, .NET, and .NET Core.'
 ---
 
-# .NET
+# C\# and .NET
 
  
 

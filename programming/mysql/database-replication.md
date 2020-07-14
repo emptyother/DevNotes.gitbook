@@ -133,9 +133,11 @@ That's it!
 
 #### Create backup
 
-```sql
+```bash
 # Only make master copy of a single database
-mysqldump -u username -p --single-transaction --master-data=1 --quick mydatabase > db.sql
+# master-data=2 to only add the CHANGE MASTER command as comment.
+mysqldump -u username -p --single-transaction --master-data=2 --quick mydatabase > db.sql
+
 
 ```
 

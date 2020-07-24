@@ -28,6 +28,7 @@
 * [MySQL](programming/mysql/README.md)
   * [Troubleshooting](programming/mysql/troubleshooting.md)
   * [Database Replication](programming/mysql/database-replication.md)
+  * [Azure MySQL](programming/mysql/azure-mysql.md)
 * [PowerShell](programming/powershell.md)
 * [SVG](programming/svg.md)
 * [Useful APIs](programming/useful-apis.md)
